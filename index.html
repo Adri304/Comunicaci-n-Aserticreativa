@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/stilo.css">
+  <title>Comunicación Asertiva</title>
+ 
+</head>
+<body>
+
+<header>
+  <h1>Comunicación Asertiva</h1>
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div><div></div><div></div>
+  </div>
+  <nav>
+    <div class="nav-links">
+      <a href="#que-es">¿Qué es?</a>
+      <a href="#estrategias">Estrategias</a>
+      <a href="#tipos">Verbal y No Verbal</a>
+      <a href="#video">Video</a>
+      <a href="#juego">Juego</a>
+      <a href="#auto-evaluacion">Autoevaluación</a>
+      <a href="#reflexion">Reflexión</a>
+    </div>
+  </nav>
+</header>
+
+<section id="que-es">
+  <h2>¿Qué es la Comunicación Asertiva?</h2>
+  <p>
+    La comunicación asertiva es la habilidad de expresar pensamientos, emociones y necesidades de forma clara, directa y respetuosa, sin agredir ni someterse a los demás.  
+    Es un equilibrio entre expresar lo que sentimos y escuchar lo que el otro necesita.
+  </p>
+  <p>
+    A diferencia de la comunicación pasiva (donde se evita el conflicto) o agresiva (donde se imponen las ideas), la asertividad fomenta el respeto mutuo, la empatía y el entendimiento.  
+    Se trata de encontrar la manera adecuada de transmitir nuestro mensaje de forma efectiva, manteniendo la confianza y seguridad en uno mismo.
+  </p>
+</section>
+
+<section id="estrategias">
+  <h2>Estrategias en Diferentes Ámbitos</h2>
+  <p><strong>Ámbito laboral:</strong> Escuchar activamente, dar feedback constructivo y expresar desacuerdos con respeto.</p>
+  <p><strong>Ámbito académico:</strong> Participar en clase, pedir aclaraciones sin miedo y colaborar en trabajos grupales.</p>
+  <p><strong>Ámbito cotidiano:</strong> Resolver conflictos familiares con calma, establecer límites y practicar la empatía en conversaciones diarias.</p>
+</section>
+
+<section id="tipos">
+  <h2>Comunicación Verbal y No Verbal</h2>
+  <p><strong>Verbal:</strong> Se refiere al uso de palabras habladas o escritas. Incluye tono de voz, claridad en el mensaje y elección adecuada de palabras.</p>
+  <p><strong>No verbal:</strong> Comprende gestos, posturas, expresiones faciales y contacto visual. La coherencia entre lo que decimos y lo que transmitimos con nuestro cuerpo es fundamental para que el mensaje sea creíble y asertivo.</p>
+</section>
+
+<section id="video">
+  <h2>Video sobre Comunicación Asertiva</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/at4OW4MzTRs?si=yLlUziThXYm5UCbm" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section id="juego">
+  <h2>Juego: Practica tu Comunicación Asertiva</h2>
+  <div id="game-container">
+    <p class="question"></p>
+    <div class="options"></div>
+    <p id="result"></p>
+    <button id="restartBtn" onclick="restartGame()">Reiniciar Partida</button>
+  </div>
+</section>
+
+<!-- Nueva sección autoevaluación -->
+<section id="auto-evaluacion">
+  <h2>Autoevaluación y Reflexión Personal</h2>
+  <p>La comunicación asertiva comienza con reconocer cómo nos expresamos día a día. Usa los emojis para identificar tu estilo y completa la checklist para autoevaluarte.</p>
+  
+  <div class="emoji-container">
+    <span class="emoji" data-msg="Sueles ser pasivo, te cuesta expresar lo que piensas.">😶</span>
+    <span class="emoji" data-msg="Tiendes a ser agresivo, impones tus ideas con fuerza.">😡</span>
+    <span class="emoji" data-msg="A veces eres pasivo-agresivo, expresas indirectamente tu malestar.">🙄</span>
+    <span class="emoji" data-msg="¡Bien! Sueles comunicarte de forma asertiva, con respeto y claridad.">😊</span>
+  </div>
+  <div id="emoji-result">Haz clic en un emoji para descubrir tu estilo.</div>
+
+  <div class="checklist">
+    <h3>Checklist: ¿Soy asertivo?</h3>
+    <label><input type="checkbox"> Expreso mis opiniones sin miedo ni agresividad.</label>
+    <label><input type="checkbox"> Escucho a los demás con respeto.</label>
+    <label><input type="checkbox"> Mantengo contacto visual y postura abierta al comunicarme.</label>
+    <label><input type="checkbox"> Defiendo mis derechos sin pasar por encima de los demás.</label>
+    <label><input type="checkbox"> Uso un tono de voz calmado y claro.</label>
+    <button onclick="evaluarChecklist()">Evaluar mi comunicación</button>
+    <div id="resultado-checklist"></div>
+  </div>
+</section>
+
+<section id="reflexion">
+  <h2>Reflexión</h2>
+  <p>
+    La comunicación asertiva no es solo una técnica, sino una actitud hacia la vida.  
+    Practicarla nos ayuda a construir relaciones más saludables, resolver conflictos con respeto y expresar nuestra autenticidad sin temor.  
+    Recordemos que ser asertivos es también un acto de amor propio y de respeto hacia los demás.
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 Comunicación Asertiva | Desarrollado por Jesus Adrian Buñay Cepeda</p>
+</footer>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script src="./script/dinamica.js"></script>
+</body>
+</html>
